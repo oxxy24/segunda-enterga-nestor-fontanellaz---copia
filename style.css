@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cinzel:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: aquamarine;
+    overflow-x: hidden;
+}
+.logito{
+    width: 10%;   
+}
+.logito-ellas{
+    width: 10%;
+    
+}
+.nav-inicio{
+    background-color:brown;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.portada{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.portada-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+}
+.navegador-links{
+    display: flex;
+    gap: 30px;
+}
+.navegador-link{
+    list-style: none;
+    
+}
+.navegador-link a {
+    display: block;
+    padding: 20px 5px;
+    color: beige;
+    text-decoration: none;
+}
+.options-option{
+    padding: 40px;
+    color: beige;
+    background-color: rgb(11, 107, 139);
+}
+.titulo-ellas{
+    text-align: center; 
+}
+.parrafo-ellas{
+    text-align: center;
+    font-family: Bungee Spice;
+}
+.nav-ellas{
+    background-color: palevioletred;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+.opciones-opcion{
+    padding: 40px;
+    color: beige;
+    background-color: palevioletred;
+}
+.galeria{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6,150px);
+    grid-template-areas: "img1 img2 img2 img4"
+                         "img1 img2 img2 img4"
+                         "img1 img3 img3 img4"
+                         "img5 img5 img6 img6"
+                         "img5 img5 img6 img6"
+                         "img7 img7 img7 img7";
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav-contactos {
+    background-color: green; 
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.form-contactos{
+    background-color: rgb(255, 136, 0);
+    width: 350px;
+    margin: 40px auto 0px auto;
+    padding: 20px;
+    
+}
+.titulo-inicio{
+    font-size: 64px;
+    text-align: center;
+    font-family: Bungee Spice;
+    font-size: 80px;
+    text-shadow: 5px 20px black ;
+    position: absolute;
+}
+h3{
+    font-size: 30px;
+}
+.subtitulo{
+    text-align: center;
+    font-family: Cinzel;
+    font-size: 40px;
+}
+.descripcion-tienda{
+    font-family: Cinzel;
+    font-size: 30px;
+}
+.descripcion-dos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.titulo-disponible{
+    color: blueviolet;
+    font-size: 40px;
+}
+
+.video-presentacion{
+    width: 50%;
+    height: 500px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.tarjeta{
+    width: 400px;
+    background-color: rgb(137, 151, 235);
+    margin: 10px;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+.boton-primario{
+    background-color: aqua;
+    color: blue;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+}
+.boton-primario:hover{
+    background-color: yellow;
+}
+.tarjeta-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.tarjeta-descripcion{
+    font-family: Cinzel;
+    font-size: 15px;
+}
+
+.ademas{
+    text-align: center;
+    font-family: Bungee Spice;
+}
+@media(max-width: 992px){
+    .titulo{
+        font-size: 48px;
+    }
+    .galeria{
+        width:100%;
+        padding: 5px;
+    }
+    .tarjetas{
+        margin-bottom: 20px;
+    }
+    
+}
+.mascara-tarjeta{
+    width: 500px;
+    background-color: brown;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mascara-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.mascara-descripcion{
+    font-family: Cinzel;
+    font-size: 15px;
+}
+.boton-dos{
+    background-color: orange;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+}
+.boton-dos:hover{
+    background-color: yellow;
+}
+.tarjeta-titulo{
+    text-align: center;
+}
+.mascaras-tarjetas{
+    display: flex;
+}
+.pie-pagina{
+    padding: 20px;
+
+}
+.link{
+    text-decoration: none;
+    font-size: 24px;
+    color: blueviolet;
+}
